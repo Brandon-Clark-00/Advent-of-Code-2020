@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F160B4CA-BD8D-42B0-95A0-A6D4E9D4699A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdventOfCode2020</RootNamespace>
+    <AssemblyName>AdventOfCode2020</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="day1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day1.Designer.cs">
+      <DependentUpon>day1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day2.Designer.cs">
+      <DependentUpon>day2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day3.Designer.cs">
+      <DependentUpon>day3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day4.Designer.cs">
+      <DependentUpon>day4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day5.Designer.cs">
+      <DependentUpon>day5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day6.Designer.cs">
+      <DependentUpon>day6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="day7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="day7.Designer.cs">
+      <DependentUpon>day7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="day1.resx">
+      <DependentUpon>day1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day2.resx">
+      <DependentUpon>day2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day3.resx">
+      <DependentUpon>day3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day4.resx">
+      <DependentUpon>day4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day5.resx">
+      <DependentUpon>day5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day6.resx">
+      <DependentUpon>day6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="day7.resx">
+      <DependentUpon>day7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
